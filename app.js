@@ -28,6 +28,55 @@ server.listen(3000);
 //console.log(my_name);
 
 
+//content of a request res is an object call req:
+
+/*
+req = {
+  // HTTP method and URL
+  method: "POST",
+  url: "/register",
+  originalUrl: "/register",
+
+  // HTTP headers (metadata)
+  headers: {
+    host: "localhost:3000",
+    "content-type": "application/x-www-form-urlencoded", // or "application/json" if JSON
+    "user-agent": "Mozilla/5.0",
+    // ...other headers
+  },
+
+  // Query parameters from URL (if any)
+  query: {
+    // e.g., /register?ref=123
+    ref: "123"
+  },
+
+  // The parsed body of the request (form inputs or JSON)
+  body: {
+    username: "Philippe",
+    password: "1234"
+  },
+
+  // Cookies (if any)
+  cookies: {
+    // e.g., session_id: "abc123"
+  },
+
+  // Route parameters (if URL had variables like /user/:id)
+  params: {
+    // e.g., id: "42"
+  },
+
+  // Other Express/request properties
+  protocol: "http",
+  ip: "127.0.0.1",
+  path: "/register",
+  get: function(headerName) {// returns value of header},
+  // ...many other properties
+};
+*/
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
